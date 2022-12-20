@@ -1,0 +1,9 @@
+.icon {
+    background: url(../../assets/img/Sprites.64af8f61.svg) no-repeat;
+}
+
+.icon-24 {
+    width: 24px;
+    height: 24px;
+    /* border: 1px solid red; */
+}

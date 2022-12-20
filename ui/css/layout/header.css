@@ -1,0 +1,59 @@
+.header {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: notosans-semibold;
+    font-size: 14px;
+    padding: 0 16px 0 10px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    
+   
+}
+
+.icon-collapse {
+    background-position: -843px -30px;
+    
+    margin-right: 20px;
+}
+
+.company-name {
+    
+}
+
+.icon-arrow__left {
+    background-position:  -1124px -356px;
+    margin-left: 2px;
+    
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.icon-bell {
+    background-position: -788px -30px;
+    margin-right: 24px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    background-position: -352px -894px;
+    border-radius: 50%;
+    margin-right: 6px;
+    /* border: 1px solid red; */
+}
+
+.icon-arrow__right {
+    background-position: -461px -403px;
+    margin-left: 2px;
+    /* border: 1px solid red; */
+}
+
+
