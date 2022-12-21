@@ -1,8 +1,8 @@
 .sidebar {
+    height: 100%;
+    width: 200px;
     background-color: #38393d;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    height: 100vh;
+    
 }
 
 .sidebar-top {
@@ -27,6 +27,7 @@
 
 .sidebar-bottom {
     height: calc(100% - 56px);
+    box-sizing: border-box;
     /* height: 500px; */
     padding: 10px 12px 0px 12px;
     overflow-y: auto;
@@ -51,6 +52,28 @@
     font-size: 13px;
     color: #fff;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(186, 185, 185); 
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(118, 118, 118); 
+    cursor: pointer;
+  }
 
 .icon-overview {
     
@@ -129,4 +152,8 @@
     
 }
 
-
+/* @media (max-width: 800px) {
+    .sidebar {
+      display: none;
+    }
+  } */

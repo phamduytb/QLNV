@@ -1,0 +1,19 @@
+.btn {
+    height: 36px;
+    min-width: 80px;
+    padding: 0 16px;
+    border-radius: 4px;
+    background-color: #50B83C;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #96D58A;
+}
+
+.btn:focus {
+    background-color: rgb(48, 111, 36);
+}
