@@ -108,7 +108,7 @@
                     <div class="content-header__left">
                         Nhân viên
                     </div>
-                    <button class="btn  content-header__right">
+                    <button id="btn-add-employee" class="btn  content-header__right">
                         <!-- <i class="icofont-ui-add"></i> -->
                         Thêm mới nhân viên
                     </button>
@@ -129,7 +129,7 @@
                         
                     </div>
                     <div class="table-main">
-                        <table>
+                        <table id="tbEmployeeList">
                             <thead>
                                 <tr>
                                     <th class="th-first">
@@ -137,14 +137,14 @@
                                     </th>
                                     <th class="text-align--left" style="min-width: 120px;">MÃ NHÂN VIÊN</th>
                                     <th class="text-align--left" style="min-width: 200px;">TÊN NHÂN VIÊN</th>
-                                    <th class="text-align--left" style="min-width: 100px;">GIỚI TÍNH</th>
+                                    <th class="text-align--left" style="min-width: 150px;">GIỚI TÍNH</th>
                                     <th class="text-align--center" style="min-width: 100px;">NGÀY SINH</th>
                                     <th class="text-align--left" style="min-width: 100px;">SỐ CMND</th>
                                     <th class="text-align--left" style="min-width: 150px;">CHỨC DANH</th>
-                                    <th class="text-align--left" style="min-width: 100px;">TÊN ĐƠN VỊ</th>
+                                    <th class="text-align--left" style="min-width: 200px;">TÊN ĐƠN VỊ</th>
                                     <th class="text-align--left" style="min-width: 150px;">SỐ TÀI KHOẢN</th>
                                     <th class="text-align--left" style="min-width: 150px;">TÊN NGÂN HÀNG</th>
-                                    <th class="text-align--left" style="min-width: 150px;" title="Chi nhánh tài khoản ngân hàng">CHI NHÁNH TKNH</th>
+                                    <th class="text-align--left" style="min-width: 200px;" title="Chi nhánh tài khoản ngân hàng">CHI NHÁNH NGÂN HÀNG</th>
                                     <th class="text-align--left" style="border-right: none; min-width: 100px;" style="min-width: 100px;">CHỨC NĂNG</th>
                                 </tr>
                             </thead>
@@ -469,9 +469,9 @@
 
     <!--------- start form chi tiết nhân viên ----------->
 
-    <div class="form-container">
-        <form action="" id="form-employee">
-            <div class="form-wrapper">
+    <div id="form-employee" class="form-container" hidden>
+        <!-- <form action="" hidden> -->
+            <div  class="form-wrapper">
                 <div class="form-header">
                     <div class="form-header__left">
                         <div class="form-title">Thông tin nhân viên</div>
@@ -486,7 +486,7 @@
                     </div>
                     <div class="form-header__right">
                         <button class="icon icon-24 icon-form icon-help" title="Giúp(F1)"></button>
-                        <button class="icon icon-24 icon-form icon-exit" title="Đóng(ESC)"></button>
+                        <button id="btn-x" class="icon icon-24 icon-form icon-exit" title="Đóng(ESC)"></button>
                     </div>
                 </div>
 
@@ -741,10 +741,21 @@
                     </div>
                 </div>
             </div>
-        </form>
+        <!-- </form> -->
     </div>
 
     <!--------- end form chi tiết nhân viên ----------->
-    
+
+    <!-- thư viện -->
+    <script src="../lib/jquery-3.6.3.min.js"></script>
+
+    <!-- js dùng chung -->
+        <script src="/js/base/common.js"></script>
+        <script src="/js/base/resource.js"></script>
+        <script src="/js/base/enum.js"></script>
+
+    <!-- js dùng riêng -->
+        <script src="/js/pages/employee.js"></script>
+
 </body>
 </html>

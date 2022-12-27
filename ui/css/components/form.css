@@ -5,7 +5,7 @@
     right: 0;
     bottom: 0;
     background-color: #3738394d;
-    display: flex;
+    display: flex ;
     justify-content: center;
     align-items: center;
     z-index: 999;
@@ -13,16 +13,14 @@
 }
 
 .form-wrapper {
-    min-width: 900px;
+    width: 900px;
     /* min-height: 600px; */
+    display: flex;
     background-color: #fff;
     padding: 32px;
     box-sizing: border-box;
-    display: flex;
     flex-direction: column;
     border-radius: 4px;
-    display: flex;
-    flex-direction: column;
     row-gap: 32px;
     /* display: none; */
 
