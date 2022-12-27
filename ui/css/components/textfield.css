@@ -1,4 +1,76 @@
+
 .textfiled-container {
+    display: flex;
+    flex-direction: column;
+    /* column-gap: 8px; */
+}
+
+.textfied-header {
+    margin-bottom: 8px;
+}
+
+.textfiled-label {
+    font-family: notosans-semibold;
+}
+
+.textfiled-label--required {
+    color: red;
+}
+
+
+
+.textfiled-input{
+    height: 36px;
+    /* min-width: 260px; */
+    /* width: 100%; */
+    box-sizing: border-box;
+    outline: unset;
+    padding: 0 8px 0 12px;
+    border-radius: 4px;
+    border: 1px solid #c9c7c7;
+    
+}
+
+.textfiled-input--required {
+
+}
+
+.input-error--message {
+
+}
+
+.textfield-input--radio {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    
+}
+
+.textfiled-input:hover {
+    border-color: #96D58A;
+}
+
+.textfiled-input:focus {
+    border-color: #46a034;
+}  
+
+.textfiled-input--icon {
+    padding-right: 28px;
+    min-width: 260px;
+}
+
+
+
+.textfiled-icon-search {
+    background-image: url(../../assets/icon/search.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position-x: calc(100% - 8px);
+    background-position-y: center;
+}
+
+/* -----------Text-file dùng cách cắt ảnh---------------- */
+/* .textfiled-container {
     height: 36px;
     min-width: 260px;
     position: relative;
@@ -34,5 +106,5 @@
 
 .textfiled-icon__search {
     background-position: -316px -146px;
-    /* border: 1px solid red; */
-}
+   
+} */

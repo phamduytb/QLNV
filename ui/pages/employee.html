@@ -10,6 +10,7 @@
 <body>
     <div class="container">
         
+        <!---------------start sidebar --------------->
         <div class="sidebar">
             <div class="sidebar-top">
                 <div class="icon icon-24 sidebar-top__icon"></div>
@@ -78,8 +79,13 @@
                 </div>
             </div>
         </div>
+
+        <!------------------------ end sidebar ----------->
        
-        <div class="header-content">
+        <!-------------  start main-wrapper chứa header và content -------->
+        <div class="main-wrapper">
+
+            <!-- start header -->
             <div class="header">
                 <div class="header-left">
                     <div class="icon icon-24 icon-collapse"></div>
@@ -93,36 +99,652 @@
                     <div class="icon icon-24 icon-arrow__right"></div> 
                 </div>
             </div>
+
+            <!-- end header -->
             
+            <!-- start content -->
             <div class="content">
                 <div class="content-header">
                     <div class="content-header__left">
                         Nhân viên
                     </div>
-                    <div class="btn content-header__right">
+                    <button class="btn  content-header__right">
+                        <!-- <i class="icofont-ui-add"></i> -->
                         Thêm mới nhân viên
-                    </div>
+                    </button>
                 </div>
+
                 <div class="content-table">
                     <div class="table-header">
-                        <div class="textfiled-container">
+                        <!-- <div class="textfiled-container">
                             <input type="text" class="textfiled-input" placeholder="Tìm theo mã, tên nhân viên">
                             <div class="textfiled-icon icon textfiled-icon__search"></div>
-                        </div>
-                        <div class="icon icon-24 icon-loading">
+                        </div> -->
+                        <input type="text" class="textfiled-input textfiled-input--icon textfiled-icon-search" placeholder="Tìm theo mã, tên nhân viên">
+                        <button class="btn-refresh">
+                            <div class="icon icon-24 icon-loading"></div>
+                        </button>
+                        <!-- <div class="icon icon-24 icon-loading"> -->
 
-                        </div>
+                        
                     </div>
                     <div class="table-main">
-
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="th-first">
+                                        <input type="checkbox">
+                                    </th>
+                                    <th class="text-align--left" style="min-width: 120px;">MÃ NHÂN VIÊN</th>
+                                    <th class="text-align--left" style="min-width: 200px;">TÊN NHÂN VIÊN</th>
+                                    <th class="text-align--left" style="min-width: 100px;">GIỚI TÍNH</th>
+                                    <th class="text-align--center" style="min-width: 100px;">NGÀY SINH</th>
+                                    <th class="text-align--left" style="min-width: 100px;">SỐ CMND</th>
+                                    <th class="text-align--left" style="min-width: 150px;">CHỨC DANH</th>
+                                    <th class="text-align--left" style="min-width: 100px;">TÊN ĐƠN VỊ</th>
+                                    <th class="text-align--left" style="min-width: 150px;">SỐ TÀI KHOẢN</th>
+                                    <th class="text-align--left" style="min-width: 150px;">TÊN NGÂN HÀNG</th>
+                                    <th class="text-align--left" style="min-width: 150px;" title="Chi nhánh tài khoản ngân hàng">CHI NHÁNH TKNH</th>
+                                    <th class="text-align--left" style="border-right: none; min-width: 100px;" style="min-width: 100px;">CHỨC NĂNG</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td ><input type="checkbox"></td>
+                                    <td>MF1418</td>
+                                    <td>Phạm Đình Duy</td>
+                                    <td>Nam</td>
+                                    <td  class="text-align--center">01/01/2000</td>
+                                    <td>03421780943</td>
+                                    <td>Nhân viên</td>
+                                    <td>Sản xuất</td>
+                                    <td>1241432431413</td>
+                                    <td>Techcombank</td>
+                                    <td>Hà Nội</td>
+                                    <td class="td-last">
+                                        <div class="td-title">Sửa</div>
+                                        <button class="td-button"><i class="icofont-caret-down"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>MF1418</td>
+                                    <td>Phạm Đình Duy</td>
+                                    <td>Nam</td>
+                                    <td class="text-align--ceter">01/01/2000</td>
+                                    <td>03421780943</td>
+                                    <td>Nhân viên</td>
+                                    <td>Sản xuất</td>
+                                    <td>1241432431413</td>
+                                    <td>Techcombank</td>
+                                    <td>Hà Nội</td>
+                                    <td class="td-last">
+                                        <div class="td-title">Sửa</div>
+                                        <button class="td-button"><i class="icofont-caret-down"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td ><input type="checkbox"></td>
+                                    <td>MF1418</td>
+                                    <td>Phạm Đình Duy</td>
+                                    <td>Nam</td>
+                                    <td class="text-align--center">01/01/2000</td>
+                                    <td>03421780943</td>
+                                    <td>Nhân viên</td>
+                                    <td>Sản xuất</td>
+                                    <td>1241432431413</td>
+                                    <td>Techcombank</td>
+                                    <td>Hà Nội</td>
+                                    <td class="td-last">
+                                        <div class="td-title">Sửa</div>
+                                        <button class="td-button"><i class="icofont-caret-down"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td ><input type="checkbox"></td>
+                                    <td>MF1418</td>
+                                    <td>Phạm Đình Duy</td>
+                                    <td>Nam</td>
+                                    <td class="text-align--center">01/01/2000</td>
+                                    <td>03421780943</td>
+                                    <td>Nhân viên</td>
+                                    <td>Sản xuất</td>
+                                    <td>1241432431413</td>
+                                    <td>Techcombank</td>
+                                    <td>Hà Nội</td>
+                                    <td class="td-last">
+                                        <div class="td-title">Sửa</div>
+                                        <button class="td-button"><i class="icofont-caret-down"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td ><input type="checkbox"></td>
+                                    <td>MF1418</td>
+                                    <td>Phạm Đình Duy</td>
+                                    <td>Nam</td>
+                                    <td class="text-align--center">01/01/2000</td>
+                                    <td>03421780943</td>
+                                    <td>Nhân viên</td>
+                                    <td>Sản xuất</td>
+                                    <td>1241432431413</td>
+                                    <td>Techcombank</td>
+                                    <td>Hà Nội</td>
+                                    <td class="td-last">
+                                        <div class="td-title">Sửa</div>
+                                        <button class="td-button"><i class="icofont-caret-down"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td ><input type="checkbox"></td>
+                                    <td>MF1418</td>
+                                    <td>Phạm Đình Duy</td>
+                                    <td>Nam</td>
+                                    <td class="text-align--center">01/01/2000</td>
+                                    <td>03421780943</td>
+                                    <td>Nhân viên</td>
+                                    <td>Sản xuất</td>
+                                    <td>1241432431413</td>
+                                    <td>Techcombank</td>
+                                    <td>Hà Nội</td>
+                                    <td class="td-last">
+                                        <div class="td-title">Sửa</div>
+                                        <button class="td-button"><i class="icofont-caret-down"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td ><input type="checkbox"></td>
+                                    <td>MF1418</td>
+                                    <td>Phạm Đình Duy</td>
+                                    <td>Nam</td>
+                                    <td class="text-align--center">01/01/2000</td>
+                                    <td>03421780943</td>
+                                    <td>Nhân viên</td>
+                                    <td>Sản xuất</td>
+                                    <td>1241432431413</td>
+                                    <td>Techcombank</td>
+                                    <td>Hà Nội</td>
+                                    <td class="td-last">
+                                        <div class="td-title">Sửa</div>
+                                        <button class="td-button"><i class="icofont-caret-down"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td ><input type="checkbox"></td>
+                                    <td>MF1418</td>
+                                    <td>Phạm Đình Duy</td>
+                                    <td>Nam</td>
+                                    <td class="text-align--center">01/01/2000</td>
+                                    <td>03421780943</td>
+                                    <td>Nhân viên</td>
+                                    <td>Sản xuất</td>
+                                    <td>1241432431413</td>
+                                    <td>Techcombank</td>
+                                    <td>Hà Nội</td>
+                                    <td class="td-last">
+                                        <div class="td-title">Sửa</div>
+                                        <button class="td-button"><i class="icofont-caret-down"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td ><input type="checkbox"></td>
+                                    <td>MF1418</td>
+                                    <td>Phạm Đình Duy</td>
+                                    <td>Nam</td>
+                                    <td class="text-align--center">01/01/2000</td>
+                                    <td>03421780943</td>
+                                    <td>Nhân viên</td>
+                                    <td>Sản xuất</td>
+                                    <td>1241432431413</td>
+                                    <td>Techcombank</td>
+                                    <td>Hà Nội</td>
+                                    <td class="td-last">
+                                        <div class="td-title">Sửa</div>
+                                        <button class="td-button"><i class="icofont-caret-down"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td ><input type="checkbox"></td>
+                                    <td>MF1418</td>
+                                    <td>Phạm Đình Duy</td>
+                                    <td>Nam</td>
+                                    <td class="text-align--center">01/01/2000</td>
+                                    <td>03421780943</td>
+                                    <td>Nhân viên</td>
+                                    <td>Sản xuất</td>
+                                    <td>1241432431413</td>
+                                    <td>Techcombank</td>
+                                    <td>Hà Nội</td>
+                                    <td class="td-last">
+                                        <div class="td-title">Sửa</div>
+                                        <button class="td-button"><i class="icofont-caret-down"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td ><input type="checkbox"></td>
+                                    <td>MF1418</td>
+                                    <td>Phạm Đình Duy</td>
+                                    <td>Nam</td>
+                                    <td class="text-align--center">01/01/2000</td>
+                                    <td>03421780943</td>
+                                    <td>Nhân viên</td>
+                                    <td>Sản xuất</td>
+                                    <td>1241432431413</td>
+                                    <td>Techcombank</td>
+                                    <td>Hà Nội</td>
+                                    <td class="td-last">
+                                        <div class="td-title">Sửa</div>
+                                        <button class="td-button"><i class="icofont-caret-down"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td ><input type="checkbox"></td>
+                                    <td>MF1418</td>
+                                    <td>Phạm Đình Duy</td>
+                                    <td>Nam</td>
+                                    <td class="text-align--center">01/01/2000</td>
+                                    <td>03421780943</td>
+                                    <td>Nhân viên</td>
+                                    <td>Sản xuất</td>
+                                    <td>1241432431413</td>
+                                    <td>Techcombank</td>
+                                    <td>Hà Nội</td>
+                                    <td class="td-last">
+                                        <div class="td-title">Sửa</div>
+                                        <button class="td-button"><i class="icofont-caret-down"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td ><input type="checkbox"></td>
+                                    <td>MF1418</td>
+                                    <td>Phạm Đình Duy</td>
+                                    <td>Nam</td>
+                                    <td class="text-align--center">01/01/2000</td>
+                                    <td>03421780943</td>
+                                    <td>Nhân viên</td>
+                                    <td>Sản xuất</td>
+                                    <td>1241432431413</td>
+                                    <td>Techcombank</td>
+                                    <td>Hà Nội</td>
+                                    <td class="td-last">
+                                        <div class="td-title">Sửa</div>
+                                        <button class="td-button"><i class="icofont-caret-down"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td ><input type="checkbox"></td>
+                                    <td>MF1418</td>
+                                    <td>Phạm Đình Duy</td>
+                                    <td>Nam</td>
+                                    <td class="text-align--center">01/01/2000</td>
+                                    <td>03421780943</td>
+                                    <td>Nhân viên</td>
+                                    <td>Sản xuất</td>
+                                    <td>1241432431413</td>
+                                    <td>Techcombank</td>
+                                    <td>Hà Nội</td>
+                                    <td class="td-last">
+                                        <div class="td-title">Sửa</div>
+                                        <button class="td-button"><i class="icofont-caret-down"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td ><input type="checkbox"></td>
+                                    <td>MF1418</td>
+                                    <td>Phạm Đình Duy</td>
+                                    <td>Nam</td>
+                                    <td class="text-align--center">01/01/2000</td>
+                                    <td>03421780943</td>
+                                    <td>Nhân viên</td>
+                                    <td>Sản xuất</td>
+                                    <td>1241432431413</td>
+                                    <td>Techcombank</td>
+                                    <td>Hà Nội</td>
+                                    <td class="td-last">
+                                        <div class="td-title">Sửa</div>
+                                        <button class="td-button"><i class="icofont-caret-down"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td ><input type="checkbox"></td>
+                                    <td>MF1418</td>
+                                    <td>Phạm Đình Duy</td>
+                                    <td>Nam</td>
+                                    <td class="text-align--center">01/01/2000</td>
+                                    <td>03421780943</td>
+                                    <td>Nhân viên</td>
+                                    <td>Sản xuất</td>
+                                    <td>1241432431413</td>
+                                    <td>Techcombank</td>
+                                    <td>Hà Nội</td>
+                                    <td class="td-last">
+                                        <div class="td-title">Sửa</div>
+                                        <button class="icon icon-24 td-button"><i class="icofont-caret-down"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                     <div class="table-footer">
-
+                        <div class="table-footer__left">
+                            Tổng số: 200 bản ghi
+                        </div>
+                        <div class="table-footer__right" >
+                            <div class="records-page">
+                                <select name="" id="" style="height: 100%;" class="input-records">
+                                    <option value="">20 bản ghi trên trang</option>
+                                    <option value="">30 bản ghi trên trang</option>
+                                    <option value="">50 bản ghi trên trang</option>
+                                    <option value="">100 bản ghi trên trang</option>
+                                </select>
+                            </div>
+                            <button class="btn-title title-pre">Trước</button>
+                            <button class="btn-title title-next">Sau</button>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!--------------- end content  --------->
         </div>
-        
+
+        <!-- -------end main-wrapper gồm: header và content -------->
     </div>
+    <!-----------start dialog  -------------->
+    <div class="dialog-container">
+        <div class="dialog-wrapper">
+            <div class="dialog-header">
+                <div class="dialog-header__title">Xóa nhân viên?</div>
+                <button class="icon icon-24 dialog-header__icon"></button>
+            </div>
+            <div class="dialog-body">
+                Bạn có muốn xóa nhân viên này không?
+            </div>
+            <div class="dialog-footer">
+                <button class="dialog-footer__btn btn-cancel">Không</button>
+                <button class="dialog-footer__btn btn-ok">Có</button>
+            </div>
+        </div>
+    </div>
+    <!----------end dialog  ----------->
+
+    <!--------- start form chi tiết nhân viên ----------->
+
+    <div class="form-container">
+        <form action="" id="form-employee">
+            <div class="form-wrapper">
+                <div class="form-header">
+                    <div class="form-header__left">
+                        <div class="form-title">Thông tin nhân viên</div>
+                        <div class="identity">
+                            <input type="checkbox" class="indentity-checkbox">
+                            <div class="identity-title">Là khách hàng</div>
+                        </div>
+                        <div class="identity">
+                            <input type="checkbox" class="indentity-checkbox">
+                            <div class="identity-title">Là nhà cung cấp</div>
+                        </div>
+                    </div>
+                    <div class="form-header__right">
+                        <button class="icon icon-24 icon-form icon-help" title="Giúp(F1)"></button>
+                        <button class="icon icon-24 icon-form icon-exit" title="Đóng(ESC)"></button>
+                    </div>
+                </div>
+
+                <div class="form-content">
+                    <div class="form-content__top">
+                        <div class="content-top__left">
+
+                            <div class="content-code-name">
+                                <div class="textfied-container el-code">
+                                    <div class="textfied-header">
+                                        <label for="" class="textfiled-label">
+                                            Mã
+                                            <span class="textfiled-label--required">*</span>
+                                        </label>
+                                    </div>
+                                    
+                                    <input type="text" id="" class="textfiled-input textfiled-input--required" />
+                                    <!-- <div class="input-error--message hide-text-ellipsis" title="Mã nhân viên không được để trống">
+                                        Mã nhân viên không được để trống
+                                    </div> -->
+                                    
+                                </div>
+    
+                                <div class="textfied-container el-name">
+                                    <div class="textfied-header">
+                                        <label for="" class="textfiled-label">
+                                            Tên
+                                            <span class="textfiled-label--required">*</span>
+                                        </label>
+                                    </div>
+                                    
+                                    <input type="text" id="" class="textfiled-input textfiled-input--required input-name" />
+                                    <!-- <div class="input-error--message hide-text-ellipsis" title="Mã nhân viên không được để trống">
+                                        Tên nhân viên không được để trống
+                                    </div> -->
+                                    
+                                </div>
+                            </div>
+                            
+
+                            <div class="textfied-container el-unit">
+                                <div class="textfied-header">
+                                    <label for="" class="textfiled-label">
+                                        Đơn vị
+                                        <span class="textfiled-label--required">*</span>
+                                    </label>
+                                </div>
+                                
+                                <div class="input-unit">
+                                    <select name="" id="" class="select-unit">
+                                        <option value=""> Phòng nhân sự</option>
+                                        <option value=""> Phòng tuyển sinh</option>
+                                        <option value=""> Phòng đào tạo</option>
+                                        <option value=""> Phòng sản xuất</option>
+                                    </select>
+                                </div>
+                                <!-- <div class="input-error--message hide-text-ellipsis" title="Mã nhân viên không được để trống">
+                                    Đơn vị không được để trống
+                                </div> -->
+                                
+                            </div>
+
+                            <div class="textfied-container el-job">
+                                <div class="textfied-header">
+                                    <label for="" class="textfiled-label">
+                                        Chức danh
+                                    </label>
+                                </div>
+                                
+                                <input type="text" id="" class="textfiled-input textfiled-input--required input-job" />
+                                
+                                
+                            </div>
+                        </div>
+
+                        <div class="content-top__right">
+                            <div class="brith-gender">
+                                <div class="textfied-container el-brith">
+                                    <div class="textfied-header">
+                                        <label for="" class="textfiled-label">
+                                            Ngày sinh
+                                        </label>
+                                    </div>
+                                    
+                                    <input type="date" id="" class="textfiled-input  input-brith"/>
+                                </div>
+                                <div class="textfied-container el-gender">
+                                    <div class="textfied-header">
+                                        <label for="" class="textfiled-label">
+                                            Giới tính
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="choice-gender">
+
+                                        <div class="radio-wrapper">
+                                            <input type="radio" value="0" class="textfield-input--radio" name="gender">
+                                            <span>Nam</span>
+                                        </div>
+                                        
+
+                                        <div class="radio-wrapper">
+                                            <input type="radio" value="1" class="textfield-input--radio" name="gender">
+                                            <span>Nữ</span>
+                                        </div>
+
+                                        <div class="radio-wrapper">
+                                            <input type="radio" value="2" class="textfield-input--radio" name="gender">
+                                            <span>Khác</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                           <div class="identity-releasedate">
+                                <div class="textfied-container el-identity">
+                                    <div class="textfied-header">
+                                        <label for="" class="textfiled-label">
+                                            Số CMND
+                                        </label>
+                                    </div>
+                                    
+                                    <input type="text" id="" class="textfiled-input input-identity" />
+                                    
+                                    
+                                </div>
+
+                                <div class="textfied-container el-releasedate">
+                                    <div class="textfied-header">
+                                        <label for="" class="textfiled-label">
+                                            Ngày sinh
+                                        </label>
+                                    </div>
+                                    
+                                    <input type="date" id="" class="textfiled-input  input-releasedate"/>
+                                </div>
+                           </div>  
+                           <div class="textfied-container el-adr-release">
+                                <div class="textfied-header">
+                                    <label for="" class="textfiled-label">
+                                        Nơi cấp
+                                    </label>
+                                </div>
+                            
+                                <input type="text" id="" class="textfiled-input input-adr-release" />
+                            
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-content__bottom">
+                        <div class="address">
+                            <div class="textfied-container el-address">
+                                <div class="textfied-header">
+                                    <label for="" class="textfiled-label">
+                                        Địa chỉ
+                                    </label>
+                                </div>
+                            
+                                <input type="text" id="" class="textfiled-input input-address" />
+                            
+                            
+                            </div>
+                        </div>
+
+                        <div class="contact">
+                            
+                            <div class="contact-mobiphone">
+                                <div class="textfied-container el-mobiphone">
+                                    <div class="textfied-header">
+                                        <label for="" class="textfiled-label">
+                                            ĐT di động
+                                        </label>
+                                    </div>
+                                
+                                    <input type="text" id="" class="textfiled-input input-mobiephone" />
+                                </div>
+                            </div>
+                            <div class="contact-landline">
+                                <div class="textfied-container el-landline">
+                                    <div class="textfied-header">
+                                        <label for="" class="textfiled-label">
+                                            ĐT cố định
+                                        </label>
+                                    </div>
+                                
+                                    <input type="text" id="" class="textfiled-input input-landline" />
+                                </div>
+                            </div>
+                            <div class="contact-email">
+                                <div class="textfied-container el-email">
+                                    <div class="textfied-header">
+                                        <label for="" class="textfiled-label">
+                                            Email
+                                        </label>
+                                    </div>
+                                
+                                    <input type="text" id="" class="textfiled-input input-email" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bank">
+                            <div >
+                                <div class="textfied-container">
+                                    <div class="textfied-header">
+                                        <label for="" class="textfiled-label">
+                                            Tài khoản ngân nhàng
+                                        </label>
+                                    </div>
+                                
+                                    <input type="text" id="" class="textfiled-input " />
+                                </div>
+                            </div>
+
+                            <div >
+                                <div class="textfied-container">
+                                    <div class="textfied-header">
+                                        <label for="" class="textfiled-label">
+                                            Tên ngân hàng
+                                        </label>
+                                    </div>
+                                
+                                    <input type="text" id="" class="textfiled-input " />
+                                </div>
+                            </div>
+
+                            <div >
+                                <div class="textfied-container">
+                                    <div class="textfied-header">
+                                        <label for="" class="textfiled-label">
+                                            Chi nhánh
+                                        </label>
+                                    </div>
+                                
+                                    <input type="text" id="" class="textfiled-input " />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-footer">
+                    <div class="form-footer__left">
+                        <button class="btn btn-form cancel-form">Hủy</button>
+                    </div>
+
+                    <div class="form-footer__right">
+                        <button class="btn btn-form store-form">Cất</button>
+                        <button class="btn  store-add-form">Cất và thêm mới</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--------- end form chi tiết nhân viên ----------->
+    
 </body>
 </html>
