@@ -4,10 +4,13 @@
 @import url(./layout/content.css);
 @import url(./components/button.css);
 @import url(./components/textfield.css);
+@import url(./components/combobox.css);
 @import url(./components/table.css);
 @import url(./components/dialog.css);
-@import url(../assets/icofont/fonts/);
 @import url(./components/form.css);
+@import url(./components/loading.css);
+@import url(./components/tooltip.css);
+@import url(../assets/icofont/fonts/);
 @import url(../assets/icofont/icofont.css);
 @import url(../assets/icofont/icofont.min.css);
 
@@ -71,11 +74,14 @@ body {
     text-align: center;
 }
 
-/* scrol-bar */
+/* ----------------css cho thanh scrollbar-------------- */
+
+/* with-height-36 */
 
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
   }
   
   /* Track */
@@ -85,12 +91,38 @@ body {
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgb(186, 185, 185); 
+    background: #bbb9b9; 
     
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(118, 118, 118); 
+    background: #767676; 
     cursor: pointer;
   }
+
+  /* ---------Xét kích thước chiều ngang------------- */
+
+.width-100 {
+    width: 100%;
+}
+
+.width-75 {
+    width: 75%;
+}
+
+.width-60 {
+    width: 60%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.width-40 {
+    width: 40%;
+}
+
+.width-25 {
+    width: 25%;
+}

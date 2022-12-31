@@ -6,7 +6,7 @@
     justify-content: space-between;
     font-family: notosans-semibold;
     font-size: 14px;
-    padding: 0 16px 0 10px;
+    padding: 0 16px 0 16px;
 }
 
 .header-left {
@@ -18,8 +18,8 @@
 
 .icon-collapse {
     background-position: -843px -30px;
-    
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .company-name {
@@ -29,7 +29,7 @@
 .icon-arrow__left {
     background-position:  -1124px -356px;
     margin-left: 2px;
-    
+    cursor: pointer;
 }
 
 .header-right {
@@ -40,6 +40,7 @@
 .icon-bell {
     background-position: -788px -30px;
     margin-right: 24px;
+    cursor: pointer;
 }
 
 .avatar {
@@ -54,6 +55,7 @@
 .icon-arrow__right {
     background-position: -461px -403px;
     margin-left: 2px;
+    cursor: pointer;
     /* border: 1px solid red; */
 }
 
