@@ -9,20 +9,20 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #3738394d;
+    background-color: var(--cover-color);
     /* opacity: 0.4; */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 999;
-    display: none;
+    /* display: none; */
 }
 
 .dialog-wrapper {
     /* display: none; */
     min-width: 400px;
     min-height: 173px;
-    background-color: #fff;
+    background-color: var( --secondary-color);
     padding: 24px;
     box-sizing: border-box;
     display: flex;
@@ -88,7 +88,7 @@
 .dialog-wraning__footer {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
 }
 
 /* dialog save */

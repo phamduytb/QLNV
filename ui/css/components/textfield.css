@@ -16,7 +16,7 @@
 }
 
 .textfield-label--required {
-    color: red;
+    color: var(--required-color);
 }
 
 
@@ -29,20 +29,20 @@
     outline: unset;
     padding: 0 8px 0 12px;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     font-family: notosans-regular;
     font-size: 14px;
     
 }
 
 .textfield__input--required {
-    border-color: #E61D1D;
+    border-color: var(--required-color);
 }
 
 .textfield__message{
     position: absolute;
     font-size: 12px;
-    color: #E61D1D;
+    color: var(--required-color);
     margin-top: 8px;
     bottom: -20px;
 }
@@ -62,11 +62,11 @@
 } */
 
 .textfield__input:hover {
-    border-color: #96D58A;
+    border-color: var(--main-hover-color);
 }
 
 .textfield__input:focus {
-    border-color: #409330;
+    border-color: var(--main-focus-color);
 }  
 
 .textfield__input--icon {

@@ -7,7 +7,7 @@
     visibility: hidden;
     min-width: 150px;
     background-color: black;
-    color: #fff;
+    color: var(--white-text-color);
     font-size: 12px;
     text-align: center;
     padding: 5px;

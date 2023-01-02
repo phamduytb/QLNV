@@ -13,21 +13,21 @@ table {
 
 table tr:hover td,
 table tr:hover .table-button{
-    background-color:rgb(236, 236, 236);
+    background-color: var(--table-hover-color);
     
     cursor: pointer;
 }
 
 th, td {
-    border-right: 1px solid #E0E0E0;
-    border-bottom: 1px solid #E0E0E0;
+    border-right: 1px solid var(--table-border-color);
+    border-bottom: 1px solid var(--table-border-color);
     height: 48px;
     padding: 0 16px;
     
 }
 
 td {
-    background-color: #fff;
+    background-color: var(--secondary-color);
 
 }
 
@@ -43,7 +43,7 @@ th:first-child {
     left: 0;
     right: unset;
     z-index: 3;
-    border-right: 1px solid #E0E0E0;
+    border-right: 1px solid var(--table-border-color);
 }
 
 /* th:first-child+th {
@@ -74,7 +74,7 @@ td input {
     position: sticky;
     border-left: none;
     left: 0;
-    border-right: 1px solid #E0E0E0;
+    border-right: 1px solid var(--table-border-color);
     /* z-index: 30; */
 }
 
@@ -99,7 +99,7 @@ td:last-child {
 }
 
 .table-button{
-    background-color: #fff;
+    background-color: var(--secondary-color);
     border: none;
     color: #0075c0;
     cursor: pointer;
@@ -115,10 +115,10 @@ td:last-child {
 }
 
 /* Dropdown  hiển thị danh sách các chức năng sửa xóa nhân bản*/
-.dropdown-menu {
+/* .dropdown-menu {
     position: absolute;
     z-index: 99;
-    /* color: var(--primary-text-color); */
+  
     background-color: #fff;
     font-weight: 400;
     border: 1px solid #ccc;
@@ -137,7 +137,32 @@ td:last-child {
   .dropdown-item:hover {
     color: #50B83C;
     background-color: #ccc;
-  }
+  } */
+
+
+  
+
+/* .function-button {
+    position: relative;
+}
+
+.menu-function {
+    position: absolute;
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 100;
+    min-width: 120px;
+    left: -88px;
+    
+}
+
+.function-item {
+    height: 36px;
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+} */
 
 
 

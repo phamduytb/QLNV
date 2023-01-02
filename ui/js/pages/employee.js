@@ -54,7 +54,10 @@ function loadData() {
                                 <td></td>
                                 <td class="td-last">
                                     <button id="btn-change-employee"class="table-button td-title">Sửa</button>
-                                    <button class="table-button td-button"><i class="icofont-caret-down"></i></button>
+                                    <button id="table-function-button" class="table-button function-button">
+                                        <i class="icofont-caret-down"></i>
+                                       
+                                    </button>
                                 </td>
                             </tr>`
                 $("table#tbEmployeeList tbody").append(trHTML);
@@ -155,12 +158,20 @@ function initEnvents() {
         })
 
         // Nhấn nút mũi tên trên ảng hiển thị các chức năng để lựa chọn
+        // try {
+        //     $("#btn-delete").click(function() {
+        //         $("#btn-dropdown-menu").show();
+        //     })
+        // } catch (error) {
+        //     console.log(error)
+        // }
+
         try {
-            $("#btn-delete").click(function() {
-                $("#btn-dropdown-menu").show();
+            $("#table-function-button").click(function() {
+                $("#table-menu-function").show();
             })
         } catch (error) {
-            console.log(error)
+            console.log(error);
         }
         
         // Nhấn nút x trên dialog xóa để ẩn nó đi

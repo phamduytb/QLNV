@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #3738394d;
+    background-color: var(--cover-color);
     display: flex ;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@
     min-width: 900px;
     /* min-height: 600px; */
     display: flex;
-    background-color: #fff;
+    background-color: var(--secondary-color);
     padding: 24px;
     box-sizing: border-box;
     flex-direction: column;
@@ -46,7 +46,7 @@
 }
 
 
-/* -------start checkbox tham khảo -------------*/
+/* -------start css checkbox  -------------*/
 
 .container-identity {
     /* display: block; */
@@ -82,19 +82,16 @@
     left: 0;
     height: 20px;
     width: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--border-color);
   }
   
-  /* On mouse-over, add a grey background color */
-  .container-identity:hover input ~ .checkmark {
-    /* background-color: #ccc; */
-  }
   
-  /* When the checkbox is checked, add a blue background */
+  
+  /* When the checkbox is checked*/
   .container-identity input:checked ~ .checkmark {
-    background-color: #fff;
-    border: 1px solid #50B83C;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--main-color);
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
@@ -116,14 +113,14 @@
     top: 0px;
     width: 6px;
     height: 12px;
-    border: solid #50B83C;
+    border: solid var(--main-color);
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
 
-/* -----------end checkbox tham khảo -------------*/
+/* -----------end css checkbox -------------*/
 
 
 .form-header__right {
@@ -205,7 +202,7 @@
 }
 
 .select-unit:focus {
-    border-color: #409330;
+    border-color: var(--main-focus-color);
 }
 
 /* .input-job {
@@ -276,8 +273,8 @@
     left: 0;
     height: 20px;
     width: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--border-color);
     border-radius: 50%;
   }
   
@@ -288,8 +285,8 @@
   
   /* When the radio button is checked, add a blue background */
   .container-radio input:checked ~ .checkmark-radio {
-    background-color: #fff;
-    border: 1px solid #50B83C;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--main-color);
   }
   
   /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -311,7 +308,7 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: #50B83C;
+    background: var(--main-color);
   }
 
 /* end css phần chọn giới tính */
@@ -386,31 +383,14 @@ input[type=radio]:checked + label{
 
 .form-footer {
     /* background-color: red; */
-    border-top: 1px solid #c9c7c7;
+    border-top: 1px solid var(--border-color);
     padding-top: 24px;
     display: flex;
     align-items: center;
     justify-content: space-between
 }
 
-.btn-form {
-    border: 1px solid #E0E0E0;
-    background-color: #FFFFFF;
-    font-family: notosans-semibold;
-    font-size: 14px;
-    color: #212121;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.btn-form:hover {
-    background-color:#bababa4f;
-}
-
-.btn-form:focus {
-    background-color:#bababa4f;
-}
 
 .cancel-form {
     

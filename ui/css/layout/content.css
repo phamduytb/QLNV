@@ -23,7 +23,7 @@
 .content-table {
     height: calc(100%  - 36px - 16px);
     /* background-color: #FFFFFF; */
-    background-color: #fff;
+    background-color: var(--secondary-color);
 
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@
     width: 24px;
     height: 24px;
     border: none;
-    background-color: #FFFFFF;
+    background-color: var(--secondary-color);
     margin-right: 20px;
     margin-left: 12px;
     cursor: pointer;
@@ -74,7 +74,7 @@
 
 
 .table-footer {
-    background-color: #fff;
+    background-color: var(--secondary-color);
     height: 56px;
     padding: 0 16px;
     display: flex;
@@ -115,7 +115,7 @@
 
 .btn-choice-page{
     border: none;
-    background-color: #fff;
+    background-color: var(--secondary-color);
     cursor: pointer;
 }
 
@@ -126,7 +126,7 @@
     width: 50px; */
     cursor: pointer;
     border: unset;
-    background-color: #fff;
+    background-color: var(--secondary-color);
 }
 
 .title-next {

@@ -126,3 +126,21 @@ body {
 .width-25 {
     width: 25%;
 }
+
+/* ------------------variable---------------------- */
+
+:root {
+    --main-color:#50B83C;
+    --main-hover-color: #96D58A;
+    --main-focus-color: #409330;
+    --secondary-color: #fff;
+    --secondary-hover-color: #bababa4f; 
+    --secondary-focus-color: #bababa4f;
+    --white-text-color: #fff;
+    --black-text-color: #212121;
+    --border-color: #ccc;
+    --required-color: #E61D1D;
+    --table-hover-color: #ececec;
+    --table-border-color:#E0E0E0;
+    --cover-color: #3738394d;
+}
